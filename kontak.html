@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontak | Digital Creative</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, "Segoe UI", sans-serif;
+            background: #f5f2ea;
+            color: #26322b;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #365b47;
+            padding: 16px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 13px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: #b08a57;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 55px 20px 30px;
+        }
+
+        .header h1 {
+            color: #284536;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #6c756e;
+        }
+
+        /* KONTAK */
+        .kontak {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .kontak-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: #fffdf8;
+            border: 1px solid #ddd8ce;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .card h2 {
+            color: #284536;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #6c756e;
+            margin-bottom: 20px;
+        }
+
+        /* SOSIAL MEDIA */
+        .sosial {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .sosial a {
+            display: block;
+            padding: 13px 15px;
+
+            background: #f1eadf;
+            color: #284536;
+
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 7px;
+            border: 1px solid #ddd8ce;
+        }
+
+        .sosial a:hover {
+            background: #365b47;
+            color: white;
+        }
+
+        /* FORM */
+        .form-group {
+            margin-bottom: 17px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+
+            border: 1px solid #ccc8bd;
+            border-radius: 7px;
+
+            background: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .btn-kirim {
+            width: 100%;
+            padding: 14px;
+
+            border: none;
+            border-radius: 7px;
+
+            background: #365b47;
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .btn-kirim:hover {
+            background: #284536;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #284536;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                width: 100%;
+            }
+
+            .kontak-container {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Digital Creative
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Beranda</a>
+            </li>
+
+            <li>
+                <a href="profil.html">Profil</a>
+            </li>
+
+            <li>
+                <a href="produk.html">Produk</a>
+            </li>
+
+            <li>
+                <a href="file:///C:/Tabelweb%202%20DIKA_XI_RPL2/layanan.html">Layanan Kami</a>
+            </li>
+
+            <li>
+                <a href="album.html">Album</a>
+            </li>
+
+            <li>
+                <a href="kontak.html" class="active">Kontak</a>
+            </li>
+
+            <li>
+                <a href="pendaftaran.html">Pendaftaran</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <h1>
+            Hubungi Kami
+        </h1>
+
+        <p>
+            Silakan hubungi kami melalui kontak yang tersedia.
+        </p>
+
+    </header>
+
+
+    <!-- KONTEN KONTAK -->
+    <main class="kontak">
+
+        <div class="kontak-container">
+
+
+            <!-- INFORMASI KONTAK -->
+            <div class="card">
+
+                <h2>
+                    Kontak Kami
+                </h2>
+
+                <p>
+                    Kamu dapat menghubungi kami melalui
+                    WhatsApp atau media sosial berikut.
+                </p>
+
+
+                <div class="sosial">
+
+                    <!-- WHATSAPP -->
+                    <a
+                        href="https://wa.me/6282116852233"
+                        target="_blank"
+                    >
+                        WhatsApp
+                        <br>
+                        082116852233
+                    </a>
+
+
+                    <!-- INSTAGRAM -->
+                    <a
+                        href="https://www.instagram.com/kaii_219/"
+                        target="_blank"
+                    >
+                        Instagram
+                        <br>
+                        @kaii_219
+                    </a>
+
+
+                    <!-- TIKTOK -->
+                    <a
+                        href="https://www.tiktok.com/@dikkai"
+                        target="_blank"
+                    >
+                        TikTok
+                        <br>
+                        @dikkai
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM PESAN -->
+            <div class="card">
+
+                <h2>
+                    Kirim Pesanan
+                </h2>
+
+                <p>
+                    Isi data berikut untuk melakukan pemesanan.
+                </p>
+
+
+                <form id="formPesanan">
+
+
+                    <!-- NAMA -->
+                    <div class="form-group">
+
+                        <label for="nama">
+                            Nama Lengkap
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            placeholder="Masukkan nama"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- NOMOR -->
+                    <div class="form-group">
+
+                        <label for="nomor">
+                            Nomor WhatsApp
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="nomor"
+                            placeholder="Contoh: 081234567890"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ALAMAT -->
+                    <div class="form-group">
+
+                        <label for="alamat">
+                            Alamat
+                        </label>
+
+                        <textarea
+                            id="alamat"
+                            placeholder="Masukkan alamat lengkap"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- PRODUK -->
+                    <div class="form-group">
+
+                        <label for="produk">
+                            Pilihan Produk
+                        </label>
+
+                        <select id="produk" required>
+
+                            <option value="">
+                                -- Pilih Produk --
+                            </option>
+
+                            <option value="Es Coklat">
+                                Es Coklat - Rp8.000
+                            </option>
+
+                            <option value="Es Milo">
+                                Es Milo - Rp8.000
+                            </option>
+
+                            <option value="Es Matcha">
+                                Es Matcha - Rp10.000
+                            </option>
+
+                            <option value="Kopi Susu">
+                                Kopi Susu - Rp10.000
+                            </option>
+
+                            <option value="Pop Ice">
+                                Pop Ice - Rp7.000
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- JUMLAH -->
+                    <div class="form-group">
+
+                        <label for="jumlah">
+                            Jumlah
+                        </label>
+
+                        <input
+                            type="number"
+                            id="jumlah"
+                            min="1"
+                            value="1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CATATAN -->
+                    <div class="form-group">
+
+                        <label for="catatan">
+                            Catatan
+                        </label>
+
+                        <textarea
+                            id="catatan"
+                            placeholder="Catatan tambahan..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- TOMBOL -->
+                    <button
+                        type="submit"
+                        class="btn-kirim"
+                    >
+                        Kirim Pesanan ke WhatsApp
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Digital Creative — Created By DIKA NIA LESMANA
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        /* PRODUK DARI LINK */
+
+        const urlParams =
+            new URLSearchParams(window.location.search);
+
+        const produkDariURL =
+            urlParams.get("produk");
+
+
+        if (produkDariURL) {
+
+            const pilihanProduk =
+                document.getElementById("produk");
+
+            for (
+                let i = 0;
+                i < pilihanProduk.options.length;
+                i++
+            ) {
+
+                if (
+                    pilihanProduk.options[i].value === produkDariURL
+                ) {
+
+                    pilihanProduk.selectedIndex = i;
+
+                    break;
+                }
+            }
+        }
+
+
+        /* FORM PESANAN */
+
+        document
+            .getElementById("formPesanan")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+
+                const nama =
+                    document.getElementById("nama").value;
+
+                const nomor =
+                    document.getElementById("nomor").value;
+
+                const alamat =
+                    document.getElementById("alamat").value;
+
+                const produk =
+                    document.getElementById("produk").value;
+
+                const jumlah =
+                    document.getElementById("jumlah").value;
+
+                const catatan =
+                    document.getElementById("catatan").value;
+
+
+                /* NOMOR WA TUJUAN */
+
+                const nomorTujuan =
+                    "6282116852233";
+
+
+                /* PESAN */
+
+                const pesan =
+                    "Halo, saya ingin melakukan pemesanan." +
+                    "\n\n" +
+                    "Nama: " + nama +
+                    "\n" +
+                    "Nomor WhatsApp: " + nomor +
+                    "\n" +
+                    "Alamat: " + alamat +
+                    "\n" +
+                    "Produk: " + produk +
+                    "\n" +
+                    "Jumlah: " + jumlah +
+                    "\n" +
+                    "Catatan: " + catatan;
+
+
+                /* LINK WHATSAPP */
+
+                const linkWhatsApp =
+                    "https://wa.me/" +
+                    nomorTujuan +
+                    "?text=" +
+                    encodeURIComponent(pesan);
+
+
+                /* BUKA WHATSAPP */
+
+                window.location.href =
+                    linkWhatsApp;
+
+            });
+
+    </script>
+
+</body>
+
+</html>

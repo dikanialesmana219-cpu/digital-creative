@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layanan Kami | Digital Creative</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, "Segoe UI", sans-serif;
+            background: #f5f2ea;
+            color: #26322b;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #365b47;
+            padding: 16px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+
+            padding: 8px 13px;
+
+            border-radius: 6px;
+
+            font-size: 14px;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: #b08a57;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 55px 20px 35px;
+        }
+
+        .header h1 {
+            color: #284536;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #6c756e;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* LAYANAN */
+        .layanan {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .layanan-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .layanan-card {
+            background: #fffdf8;
+
+            border: 1px solid #ddd8ce;
+
+            border-radius: 10px;
+
+            padding: 25px;
+
+            transition: 0.2s;
+        }
+
+        .layanan-card:hover {
+            transform: translateY(-4px);
+
+            border-color: #b08a57;
+        }
+
+        .nomor {
+            display: inline-block;
+
+            width: 38px;
+            height: 38px;
+
+            line-height: 38px;
+
+            text-align: center;
+
+            background: #365b47;
+
+            color: white;
+
+            border-radius: 50%;
+
+            font-weight: bold;
+
+            margin-bottom: 15px;
+        }
+
+        .layanan-card h2 {
+            color: #284536;
+
+            font-size: 20px;
+
+            margin-bottom: 10px;
+        }
+
+        .layanan-card p {
+            color: #6c756e;
+
+            font-size: 14px;
+        }
+
+        /* AJAKAN */
+        .pesan {
+            max-width: 850px;
+
+            margin: 50px auto 0;
+
+            padding: 30px;
+
+            background: #365b47;
+
+            color: white;
+
+            text-align: center;
+
+            border-radius: 10px;
+        }
+
+        .pesan h2 {
+            margin-bottom: 10px;
+        }
+
+        .pesan p {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 11px 22px;
+
+            background: #b08a57;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 6px;
+
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #987443;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #284536;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px 15px;
+
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 850px) {
+
+            .layanan-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                width: 100%;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .layanan-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Digital Creative
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Beranda
+                </a>
+            </li>
+
+            <li>
+                <a href="profil.html">
+                    Profil
+                </a>
+            </li>
+
+            <li>
+                <a href="produk.html">
+                    Produk
+                </a>
+            </li>
+
+            <li>
+                <a href="layanankami.html" class="active">
+                    Layanan Kami
+                </a>
+            </li>
+
+            <li>
+                <a href="album.html">
+                    Album
+                </a>
+            </li>
+
+            <li>
+                <a href="kontak.html">
+                    Kontak
+                </a>
+            </li>
+
+            <li>
+                <a href="pendaftaran.html">
+                    Pendaftaran
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <h1>
+            Layanan Kami
+        </h1>
+
+        <p>
+            Kami menyediakan berbagai layanan untuk
+            memudahkan pelanggan dalam memilih,
+            memesan, dan mendapatkan produk minuman.
+        </p>
+
+    </header>
+
+
+    <!-- DAFTAR LAYANAN -->
+
+    <main class="layanan">
+
+        <div class="layanan-grid">
+
+
+            <!-- LAYANAN 1 -->
+
+            <div class="layanan-card">
+
+                <span class="nomor">
+                    01
+                </span>
+
+                <h2>
+                    Pemesanan Minuman
+                </h2>
+
+                <p>
+                    Pelanggan dapat memilih berbagai
+                    minuman yang tersedia dan melakukan
+                    pemesanan dengan mudah melalui
+                    halaman pendaftaran.
+                </p>
+
+            </div>
+
+
+            <!-- LAYANAN 2 -->
+
+            <div class="layanan-card">
+
+                <span class="nomor">
+                    02
+                </span>
+
+                <h2>
+                    Custom Pesanan
+                </h2>
+
+                <p>
+                    Pelanggan dapat memberikan catatan
+                    khusus sesuai kebutuhan, seperti
+                    tingkat kemanisan atau permintaan
+                    tambahan lainnya.
+                </p>
+
+            </div>
+
+
+            <!-- LAYANAN 3 -->
+
+            <div class="layanan-card">
+
+                <span class="nomor">
+                    03
+                </span>
+
+                <h2>
+                    Paket Minuman
+                </h2>
+
+                <p>
+                    Tersedia pilihan paket minuman
+                    yang dapat digunakan untuk berbagai
+                    kebutuhan dan acara.
+                </p>
+
+            </div>
+
+
+            <!-- LAYANAN 4 -->
+
+            <div class="layanan-card">
+
+                <span class="nomor">
+                    04
+                </span>
+
+                <h2>
+                    Pelayanan Cepat
+                </h2>
+
+                <p>
+                    Kami berusaha memberikan pelayanan
+                    yang cepat dan membantu pelanggan
+                    dalam proses pemesanan.
+                </p>
+
+            </div>
+
+
+            <!-- LAYANAN 5 -->
+
+            <div class="layanan-card">
+
+                <span class="nomor">
+                    05
+                </span>
+
+                <h2>
+                    Informasi Produk
+                </h2>
+
+                <p>
+                    Pelanggan dapat melihat informasi
+                    mengenai produk, varian minuman,
+                    dan harga yang tersedia.
+                </p>
+
+            </div>
+
+
+            <!-- LAYANAN 6 -->
+
+            <div class="layanan-card">
+
+                <span class="nomor">
+                    06
+                </span>
+
+                <h2>
+                    Pemesanan Acara
+                </h2>
+
+                <p>
+                    Kami menerima pemesanan minuman
+                    untuk kegiatan sekolah, acara keluarga,
+                    maupun kegiatan lainnya.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- AJAKAN -->
+
+        <div class="pesan">
+
+            <h2>
+                Ingin Melakukan Pemesanan?
+            </h2>
+
+            <p>
+                Pilih produk yang kamu inginkan,
+                kemudian isi data pemesanan.
+            </p>
+
+            <a
+                href="pendaftaran.html"
+                class="btn"
+            >
+                Daftar Sekarang
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Digital Creative —
+            Created By DIKA NIA LESMANA
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

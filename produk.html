@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produk | Digital Creative</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, "Segoe UI", sans-serif;
+            background: #f5f2ea;
+            color: #26322b;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #365b47;
+            padding: 16px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 13px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            background: #b08a57;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 65px 20px 40px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            color: #284536;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #6c756e;
+        }
+
+        /* PRODUK */
+        .produk-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .produk-card {
+            background: #fffdf8;
+            border: 1px solid #ddd8ce;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.2s;
+        }
+
+        .produk-card:hover {
+            transform: translateY(-5px);
+            border-color: #365b47;
+        }
+
+        /* GAMBAR */
+        .produk-card a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .produk-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .produk-card img:hover {
+            opacity: 0.9;
+        }
+
+        /* ISI PRODUK */
+        .produk-info {
+            padding: 20px;
+        }
+
+        .produk-info h2 {
+            color: #284536;
+            margin-bottom: 8px;
+            font-size: 21px;
+        }
+
+        .produk-info p {
+            color: #6c756e;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .harga {
+            color: #b08a57;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn-pesan {
+            display: inline-block;
+            background: #365b47;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 7px;
+            font-size: 14px;
+        }
+
+        .btn-pesan:hover {
+            background: #284536;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #284536;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 850px) {
+            .produk-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                width: 100%;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .produk-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            Digital Creative
+        </a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Beranda</a>
+            </li>
+
+            <li>
+                <a href="profil.html">Profil</a>
+            </li>
+
+            <li>
+                <a href="produk.html" class="active">Produk</a>
+            </li>
+
+            <li>
+                <a href="file:///C:/Tabelweb%202%20DIKA_XI_RPL2/layanan.html">Layanan Kami</a>
+            </li>
+
+            <li>
+                <a href="album.html">Album</a>
+            </li>
+
+            <li>
+                <a href="kontak.html">Kontak</a>
+            </li>
+
+            <li>
+                <a href="pendaftaran.html">Pendaftaran</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <h1>Produk Kami</h1>
+
+        <p>
+            Pilihan minuman yang bisa kamu pesan sesuai selera.
+        </p>
+
+    </header>
+
+
+    <!-- PRODUK -->
+    <main class="produk-container">
+
+
+        <!-- ES COKLAT -->
+        <div class="produk-card">
+
+            <a href="kontak.html?produk=Es%20Coklat">
+
+                <img
+                    src="es coklat.jpeg"
+                    alt="Es Coklat"
+                >
+
+            </a>
+
+            <div class="produk-info">
+
+                <h2>Es Coklat</h2>
+
+                <p>
+                    Minuman coklat dingin dengan rasa manis dan creamy.
+                </p>
+
+                <div class="harga">
+                    Rp8.000
+                </div>
+
+                <a
+                    href="kontak.html?produk=Es%20Coklat"
+                    class="btn-pesan"
+                >
+                    Pesan Sekarang
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ES MILO -->
+        <div class="produk-card">
+
+            <a href="kontak.html?produk=Es%20Milo">
+
+                <img
+                    src="es milo.jpeg"
+                    alt="Es Milo"
+                >
+
+            </a>
+
+            <div class="produk-info">
+
+                <h2>Es Milo</h2>
+
+                <p>
+                    Minuman Milo dingin yang cocok dinikmati kapan saja.
+                </p>
+
+                <div class="harga">
+                    Rp8.000
+                </div>
+
+                <a
+                    href="kontak.html?produk=Es%20Milo"
+                    class="btn-pesan"
+                >
+                    Pesan Sekarang
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ES MATCHA -->
+        <div class="produk-card">
+
+            <a href="kontak.html?produk=Es%20Matcha">
+
+                <img
+                    src="es matcha.jpeg"
+                    alt="Es Matcha"
+                >
+
+            </a>
+
+            <div class="produk-info">
+
+                <h2>Es Matcha</h2>
+
+                <p>
+                    Minuman matcha dengan rasa khas yang lembut dan segar.
+                </p>
+
+                <div class="harga">
+                    Rp10.000
+                </div>
+
+                <a
+                    href="kontak.html?produk=Es%20Matcha"
+                    class="btn-pesan"
+                >
+                    Pesan Sekarang
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- KOPI SUSU -->
+        <div class="produk-card">
+
+            <a href="kontak.html?produk=Kopi%20Susu">
+
+                <img
+                    src="kopi susu.jpeg"
+                    alt="Kopi Susu"
+                >
+
+            </a>
+
+            <div class="produk-info">
+
+                <h2>Kopi Susu</h2>
+
+                <p>
+                    Perpaduan kopi dan susu dengan rasa yang seimbang.
+                </p>
+
+                <div class="harga">
+                    Rp10.000
+                </div>
+
+                <a
+                    href="kontak.html?produk=Kopi%20Susu"
+                    class="btn-pesan"
+                >
+                    Pesan Sekarang
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- POP ICE -->
+        <div class="produk-card">
+
+            <a href="kontak.html?produk=Pop%20Ice">
+
+                <img
+                    src="pop ice.jpeg"
+                    alt="Pop Ice"
+                >
+
+            </a>
+
+            <div class="produk-info">
+
+                <h2>Pop Ice</h2>
+
+                <p>
+                    Minuman dengan berbagai pilihan rasa yang bisa dipilih.
+                </p>
+
+                <div class="harga">
+                    Rp7.000
+                </div>
+
+                <a
+                    href="kontak.html?produk=Pop%20Ice"
+                    class="btn-pesan"
+                >
+                    Pesan Sekarang
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Digital Creative — Created By DIKA NIA LESMANA
+        </p>
+
+    </footer>
+
+</body>
+</html>

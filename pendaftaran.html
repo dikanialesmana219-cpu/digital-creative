@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pendaftaran & Pembayaran | Digital Creative</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, "Segoe UI", sans-serif;
+            background: #f5f2ea;
+            color: #26322b;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #365b47;
+            padding: 18px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .menu a:hover {
+            color: #e5c58e;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 55px 20px 30px;
+        }
+
+        .header h1 {
+            font-size: 34px;
+            color: #284536;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #6c756e;
+        }
+
+        /* CHECKOUT */
+        .checkout {
+            width: 92%;
+            max-width: 850px;
+            margin: 10px auto 70px;
+            background: #fffdf8;
+            border: 1px solid #ddd8ce;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+
+        .checkout h2 {
+            color: #365b47;
+            margin-bottom: 25px;
+            font-size: 23px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #d5d1c7;
+            border-radius: 7px;
+            background: white;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #365b47;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        /* TOTAL */
+        .total-box {
+            margin-top: 25px;
+            padding: 20px;
+            background: #f1eee5;
+            border-left: 5px solid #b08a57;
+            border-radius: 7px;
+        }
+
+        .total-label {
+            color: #6c756e;
+            font-size: 14px;
+        }
+
+        #total {
+            margin-top: 5px;
+            font-size: 27px;
+            font-weight: bold;
+            color: #365b47;
+            border: none;
+            background: transparent;
+            padding: 0;
+        }
+
+        /* PAYMENT */
+        .payment-section {
+            margin-top: 30px;
+        }
+
+        .payment-section h3 {
+            color: #365b47;
+            margin-bottom: 12px;
+        }
+
+        .payment-info {
+            display: none;
+            margin-top: 15px;
+            padding: 18px;
+            background: #f1eee5;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .payment-info strong {
+            color: #284536;
+        }
+
+        /* BUTTON */
+        .btn {
+            width: 100%;
+            border: none;
+            padding: 15px;
+            margin-top: 25px;
+            background: #365b47;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #284536;
+        }
+
+        .btn-dana {
+            background: #365b47;
+        }
+
+        .btn-dana:hover {
+            background: #284536;
+        }
+
+        .btn-cod {
+            background: #b08a57;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #284536;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu {
+                gap: 12px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .checkout {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav>
+
+    <a href="index.html" class="logo">
+        Digital Creative
+    </a>
+
+    <div class="menu">
+
+        <a href="index.html">Beranda</a>
+
+        <a href="profil.html">Profil</a>
+
+        <a href="produk.html">Produk</a>
+
+        <a href="layanankami.html">Layanan Kami</a>
+
+        <a href="album.html">Album</a>
+
+        <a href="kontak.html">Kontak</a>
+
+        <a href="pendaftaran.html">Pendaftaran</a>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<section class="header">
+
+    <h1>Pemesanan & Pembayaran</h1>
+
+    <p>
+        Pesan minuman favorit kamu dengan mudah.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     CHECKOUT
+========================= -->
+
+<section class="checkout">
+
+    <h2>Data Pemesanan</h2>
+
+
+    <!-- NAMA -->
+
+    <div class="form-group">
+
+        <label for="nama">
+            Nama Lengkap
+        </label>
+
+        <input
+            type="text"
+            id="nama"
+            placeholder="Masukkan nama lengkap"
+        >
+
+    </div>
+
+
+    <!-- NOMOR -->
+
+    <div class="form-group">
+
+        <label for="nomor">
+            Nomor WhatsApp
+        </label>
+
+        <input
+            type="tel"
+            id="nomor"
+            placeholder="Contoh: 082116852233"
+        >
+
+    </div>
+
+
+    <!-- ALAMAT -->
+
+    <div class="form-group">
+
+        <label for="alamat">
+            Alamat
+        </label>
+
+        <textarea
+            id="alamat"
+            placeholder="Masukkan alamat pengiriman"
+        ></textarea>
+
+    </div>
+
+
+    <!-- PRODUK -->
+
+    <div class="form-group">
+
+        <label for="produk">
+            Pilih Produk
+        </label>
+
+        <select id="produk">
+
+            <option value="">
+                -- Pilih Produk --
+            </option>
+
+            <option value="Es Coklat">
+                Es Coklat - Rp8.000
+            </option>
+
+            <option value="Es Milo">
+                Es Milo - Rp8.000
+            </option>
+
+            <option value="Es Matcha">
+                Es Matcha - Rp10.000
+            </option>
+
+            <option value="Kopi Susu">
+                Kopi Susu - Rp10.000
+            </option>
+
+            <option value="Pop Ice">
+                Pop Ice - Rp7.000
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- JUMLAH -->
+
+    <div class="form-group">
+
+        <label for="jumlah">
+            Jumlah
+        </label>
+
+        <input
+            type="number"
+            id="jumlah"
+            value="1"
+            min="1"
+            placeholder="Jumlah pesanan"
+        >
+
+    </div>
+
+
+    <!-- CATATAN -->
+
+    <div class="form-group">
+
+        <label for="catatan">
+            Catatan Pesanan
+        </label>
+
+        <textarea
+            id="catatan"
+            placeholder="Contoh: sedikit es, tidak terlalu manis"
+        ></textarea>
+
+    </div>
+
+
+    <!-- TOTAL -->
+
+    <div class="total-box">
+
+        <div class="total-label">
+            Total Pembayaran
+        </div>
+
+        <input
+            type="text"
+            id="total"
+            value="Rp0"
+            readonly
+        >
+
+    </div>
+
+
+    <!-- =========================
+         METODE PEMBAYARAN
+    ========================= -->
+
+    <div class="payment-section">
+
+        <h3>Metode Pembayaran</h3>
+
+        <div class="form-group">
+
+            <select id="metodePembayaran">
+
+                <option value="">
+                    -- Pilih Pembayaran --
+                </option>
+
+                <option value="dana">
+                    DANA
+                </option>
+
+                <option value="gopay">
+                    GoPay
+                </option>
+
+                <option value="qris">
+                    QRIS
+                </option>
+
+                <option value="cod">
+                    COD
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- DANA -->
+
+        <div
+            class="payment-info"
+            id="danaInfo"
+        >
+
+            <strong>Pembayaran DANA</strong>
+
+            <br><br>
+
+            Nomor DANA:
+
+            <strong>
+                082116852233
+            </strong>
+
+            <br><br>
+
+            Setelah menekan tombol pembayaran,
+            kamu akan diarahkan ke halaman pembayaran
+            DANA apabila integrasi API sudah aktif.
+
+        </div>
+
+
+        <!-- GOPAY -->
+
+        <div
+            class="payment-info"
+            id="gopayInfo"
+        >
+
+            <strong>Pembayaran GoPay</strong>
+
+            <br><br>
+
+            Nomor GoPay:
+
+            <strong>
+                082116852233
+            </strong>
+
+        </div>
+
+
+        <!-- QRIS -->
+
+        <div
+            class="payment-info"
+            id="qrisInfo"
+        >
+
+            <strong>Pembayaran QRIS</strong>
+
+            <br><br>
+
+            Silakan scan QRIS yang tersedia
+            setelah pesanan dikonfirmasi.
+
+        </div>
+
+
+        <!-- COD -->
+
+        <div
+            class="payment-info"
+            id="codInfo"
+        >
+
+            <strong>Cash On Delivery</strong>
+
+            <br><br>
+
+            Pembayaran dilakukan ketika pesanan
+            diterima.
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         BUTTON
+    ========================= -->
+
+    <button
+        type="button"
+        class="btn btn-dana"
+        id="bayarButton"
+        onclick="prosesPembayaran()"
+    >
+
+        Pilih Metode Pembayaran
+
+    </button>
+
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026 Created By DIKA NIA LESMANA
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+    /* =========================
+       HARGA PRODUK
+    ========================= */
+
+    const hargaProduk = {
+
+        "Es Coklat": 8000,
+
+        "Es Milo": 8000,
+
+        "Es Matcha": 10000,
+
+        "Kopi Susu": 10000,
+
+        "Pop Ice": 7000
+
+    };
+
+
+    /* =========================
+       ELEMENT
+    ========================= */
+
+    const produk =
+        document.getElementById("produk");
+
+    const jumlah =
+        document.getElementById("jumlah");
+
+    const total =
+        document.getElementById("total");
+
+    const metode =
+        document.getElementById("metodePembayaran");
+
+    const tombol =
+        document.getElementById("bayarButton");
+
+
+    /* =========================
+       FORMAT RUPIAH
+    ========================= */
+
+    function formatRupiah(angka) {
+
+        return new Intl.NumberFormat(
+            "id-ID",
+            {
+                style: "currency",
+                currency: "IDR",
+                maximumFractionDigits: 0
+            }
+        ).format(angka);
+
+    }
+
+
+    /* =========================
+       HITUNG TOTAL
+    ========================= */
+
+    function hitungTotal() {
+
+        const namaProduk =
+            produk.value;
+
+        const qty =
+            Number(jumlah.value) || 0;
+
+        const harga =
+            hargaProduk[namaProduk] || 0;
+
+        const hasil =
+            harga * qty;
+
+        total.value =
+            formatRupiah(hasil);
+
+    }
+
+
+    produk.addEventListener(
+        "change",
+        hitungTotal
+    );
+
+
+    jumlah.addEventListener(
+        "input",
+        hitungTotal
+    );
+
+
+    /* =========================
+       PILIH PEMBAYARAN
+    ========================= */
+
+    metode.addEventListener(
+        "change",
+        function () {
+
+            document.getElementById(
+                "danaInfo"
+            ).style.display = "none";
+
+            document.getElementById(
+                "gopayInfo"
+            ).style.display = "none";
+
+            document.getElementById(
+                "qrisInfo"
+            ).style.display = "none";
+
+            document.getElementById(
+                "codInfo"
+            ).style.display = "none";
+
+
+            if (this.value === "dana") {
+
+                document.getElementById(
+                    "danaInfo"
+                ).style.display = "block";
+
+                tombol.innerText =
+                    "Bayar dengan DANA";
+
+            }
+
+            else if (this.value === "gopay") {
+
+                document.getElementById(
+                    "gopayInfo"
+                ).style.display = "block";
+
+                tombol.innerText =
+                    "Bayar dengan GoPay";
+
+            }
+
+            else if (this.value === "qris") {
+
+                document.getElementById(
+                    "qrisInfo"
+                ).style.display = "block";
+
+                tombol.innerText =
+                    "Lanjut ke QRIS";
+
+            }
+
+            else if (this.value === "cod") {
+
+                document.getElementById(
+                    "codInfo"
+                ).style.display = "block";
+
+                tombol.innerText =
+                    "Pesan dengan COD";
+
+            }
+
+            else {
+
+                tombol.innerText =
+                    "Pilih Metode Pembayaran";
+
+            }
+
+        }
+    );
+
+
+    /* =========================
+       PROSES PEMBAYARAN
+    ========================= */
+
+    async function prosesPembayaran() {
+
+        const nama =
+            document.getElementById(
+                "nama"
+            ).value.trim();
+
+        const nomor =
+            document.getElementById(
+                "nomor"
+            ).value.trim();
+
+        const alamat =
+            document.getElementById(
+                "alamat"
+            ).value.trim();
+
+        const catatan =
+            document.getElementById(
+                "catatan"
+            ).value.trim();
+
+        const namaProduk =
+            produk.value;
+
+        const qty =
+            Number(jumlah.value);
+
+        const metodeBayar =
+            metode.value;
+
+
+        /* CEK DATA */
+
+        if (
+            !nama ||
+            !nomor ||
+            !alamat ||
+            !namaProduk ||
+            !qty ||
+            !metodeBayar
+        ) {
+
+            alert(
+                "Silakan lengkapi semua data pesanan."
+            );
+
+            return;
+
+        }
+
+
+        /* HITUNG TOTAL */
+
+        const harga =
+            hargaProduk[namaProduk];
+
+        const jumlahTotal =
+            harga * qty;
+
+
+        /* =========================
+           DANA
+        ========================= */
+
+        if (metodeBayar === "dana") {
+
+            tombol.disabled = true;
+
+            tombol.innerText =
+                "Memproses pembayaran...";
+
+
+            try {
+
+                const response =
+                    await fetch(
+                        "/api/create-order",
+                        {
+
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+
+                            body: JSON.stringify({
+
+                                nama: nama,
+
+                                nomor: nomor,
+
+                                alamat: alamat,
+
+                                produk:
+                                    namaProduk,
+
+                                jumlah:
+                                    qty,
+
+                                catatan:
+                                    catatan,
+
+                                metode:
+                                    "DANA",
+
+                                total:
+                                    jumlahTotal
+
+                            })
+
+                        }
+                    );
+
+
+                const data =
+                    await response.json();
+
+
+                /*
+                 * Jika backend DANA sudah aktif,
+                 * webRedirectUrl akan dikembalikan.
+                 */
+
+                if (
+                    data.success &&
+                    data.paymentUrl
+                ) {
+
+                    window.location.href =
+                        data.paymentUrl;
+
+                    return;
+
+                }
+
+
+                alert(
+                    "Order berhasil dibuat.\n\n" +
+
+                    "Nomor Order: " +
+                    (data.orderId || "-") +
+
+                    "\nTotal: " +
+                    formatRupiah(
+                        jumlahTotal
+                    ) +
+
+                    "\n\n" +
+
+                    "Integrasi DANA belum diaktifkan."
+                );
+
+
+            }
+
+            catch (error) {
+
+                console.error(error);
+
+                alert(
+                    "Server pembayaran belum terhubung."
+                );
+
+            }
+
+
+            tombol.disabled = false;
+
+            tombol.innerText =
+                "Bayar dengan DANA";
+
+            return;
+
+        }
+
+
+        /* =========================
+           GOPAY
+        ========================= */
+
+        if (metodeBayar === "gopay") {
+
+            const pesan =
+                `Halo, saya ingin memesan:%0A%0A` +
+
+                `Nama: ${nama}%0A` +
+
+                `Produk: ${namaProduk}%0A` +
+
+                `Jumlah: ${qty}%0A` +
+
+                `Total: ${formatRupiah(jumlahTotal)}%0A` +
+
+                `Alamat: ${alamat}%0A` +
+
+                `Catatan: ${catatan || "-"}`;
+
+
+            window.open(
+                "https://wa.me/6282116852233?text=" +
+                pesan,
+                "_blank"
+            );
+
+            return;
+
+        }
+
+
+        /* =========================
+           QRIS
+        ========================= */
+
+        if (metodeBayar === "qris") {
+
+            alert(
+                "Pesanan kamu sebesar " +
+                formatRupiah(jumlahTotal) +
+                " akan menggunakan pembayaran QRIS."
+            );
+
+            window.location.href =
+                "kontak.html";
+
+            return;
+
+        }
+
+
+        /* =========================
+           COD
+        ========================= */
+
+        if (metodeBayar === "cod") {
+
+            const pesan =
+                `Halo, saya ingin memesan dengan COD:%0A%0A` +
+
+                `Nama: ${nama}%0A` +
+
+                `Produk: ${namaProduk}%0A` +
+
+                `Jumlah: ${qty}%0A` +
+
+                `Total: ${formatRupiah(jumlahTotal)}%0A` +
+
+                `Alamat: ${alamat}%0A` +
+
+                `Catatan: ${catatan || "-"}`;
+
+
+            window.open(
+                "https://wa.me/6282116852233?text=" +
+                pesan,
+                "_blank"
+            );
+
+        }
+
+    }
+
+
+    /* =========================
+       HITUNG AWAL
+    ========================= */
+
+    hitungTotal();
+
+</script>
+
+</body>
+</html>
